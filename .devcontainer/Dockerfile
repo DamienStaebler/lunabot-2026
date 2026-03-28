@@ -18,7 +18,9 @@ RUN apt update \
     && apt install -qq -y --no-install-recommends \
          ros-${ROS_DISTRO}-nav2-bringup \
          ros-${ROS_DISTRO}-navigation2 \
-         ros-${ROS_DISTRO}-turtlebot3-gazebo
+         ros-${ROS_DISTRO}-turtlebot3-gazebo \
+         ros-${ROS_DISTRO}-pcl-conversions \
+         ros-${ROS_DISTRO}-pcl-ros
 
 ENV DEBIAN_FRONTEND=noninteractive
 ENV ROS_WS=/opt/ros2_ws
